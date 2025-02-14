@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+
+public class SimpleCalculator {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Give the first number: ");
+        Integer first = Integer.valueOf(scanner.nextLine());
+        //double first1 = first;
+        System.out.println("Give the second number: ");
+        Integer second = Integer.valueOf(scanner.nextLine());
+        //double second2 = second;
+        double result1 = first * second;
+        double result2 = first / second;
+
+
+        // Write your program here
+        System.out.println(first + " + " + second + " = " + (first + second)); // +
+        System.out.println(first + " - " + second + " = " + (first - second)); // -
+        System.out.println(first + " * " + second + " = " + (result1)); // *
+        System.out.println(first + " / " + second + " = " + (result2)); // Division
+
+    }
+}
